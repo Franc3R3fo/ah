@@ -1,0 +1,35 @@
+section .data
+    b db 60
+    c rtb
+    type0 db 0
+    type1 db 1
+    string rtb
+
+section _label0
+    run _input_number
+    run _input_number
+
+section _input_number
+    ; input a number
+    mov rid,1
+    mov ra0,1
+    mov ra1,type0
+    proc
+    ; output the number
+    mov rid,0
+    mov ra0,1
+    proc
+
+section _input_string
+    ; input a string
+    mov rid,1
+    mov ra0,1
+    mov ra1,type1
+    proc
+    ; output the string
+    mov rid,0
+    mov ra0,1
+    proc
+
+section .path
+    run _label0

@@ -1,0 +1,18 @@
+; Section with initial data
+section .data
+    a db 60       ; declaration and initialization of a
+    c db " hello "; declaration and initialization of c
+    b rtb         ; declaration of b (b is empty)
+
+section .path
+    run _label0 ; tells to execute _label0
+
+section _label0
+    mov b,a;    ; b = a;
+    add a,a,b;  ; a = a+b;
+    mov rid,0   ; rid = 0 : standard output
+    mov ra0,3   ; ra0 = 0 : number of registers to output (1-7)
+    mov ra1,b   ; ra1 = b
+    mov ra2,c   ; ra2 = c
+    mov ra3,a   ; ra3 = a
+    proc        ; call system processor
