@@ -41,12 +41,12 @@ Syntax of interpreter is `name file.ref file2.ref ...`
 ### FLAGS
 Flag is passed to the interpreter as `--option_name`.
 Other parameters (except for those required by some option ) passed count as source files names.
-| Flag | What it is? | Implemented? |
+| Flag | What is it? | Implemented? |
 | --------- | ----------- | ------------ |
-| `spm` | print a log of the sections content | ✅ |
-| `rpm` | print a log of the registers content | ✅ |
-| `ppl` | print a log of the proc queries | ✅ |
-| `pci` | print a log of cmdline arguments passed | ✅ |
+| `spm` | prints a log of the sections content | ✅ |
+| `rpm` | prints a log of the registers content | ✅ |
+| `ppl` | prints a log of the proc queries | ✅ |
+| `pci` | prints a log of cmdline arguments passed | ✅ |
 | `nsr` | program won't automatically add 9 system registers | ✅ |
 | `nrr` | program won't automatically add return register | ✅ |
 | `sasm` | print a log when the program starts, and when the program stops | ✅ |
