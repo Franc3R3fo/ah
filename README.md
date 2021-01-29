@@ -134,11 +134,11 @@ section .path
 section _label0
     mov b,a;    ; b = a;
     add a,a,b;  ; a = a+b;
-    mov rid,1   ; rid = 0 : standard output
-    mov ra0,1   ; ra0 = 0 : number of registers to output (1-7)
+    mov rid,0   ; rid = 0 : standard output
+    mov ra0,3   ; ra0 = 0 : number of registers to output (1-7)
     mov ra1,b   ; ra1 = b
-    mov ra1,c   ; ra1 = c
-    mov ra1,a   ; ra1 = a
+    mov ra2,c   ; ra2 = c
+    mov ra3,a   ; ra3 = a
     proc        ; call system processor
 ```
 
@@ -146,7 +146,7 @@ section _label0
 ------------------
 | Release | Type |
 | ------- | ---- |
-| 1.0.0 | ***Stable*** |
+| 1.0.0 | ***Experimental*** |
 
 ## Version Log
 --------------
