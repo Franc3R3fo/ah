@@ -95,8 +95,8 @@ In this section registers can be declared in two ways, and it will makes it ***p
 ### SYSCALLs
 | ID | What it Does | ARG0 | ARG1 | ARG2 | ARG3 | ARG4 | ARG5 | ARG6 | ARG7 | Implemented? | Notes |
 | -- | ------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------------ | ----- |
-| 0 | Standard Output, print arguments to screen | number of arguments | argument | ... | ... | ... | ... | ... | ✅ | |
-| 1 | Standard Input | number of arguments | type (0 : numeric, 1 : string) | ... | ... | ... | ... | ... | ✅ | each sys register will be updated with the input desired |
+| 0 | Standard Output, print arguments to screen | number of arguments | argument | ... | ... | ... | ... | ... | ... | ✅ | |
+| 1 | Standard Input | number of arguments | type (0 : numeric, 1 : string) | ... | ... | ... | ... | ... | ... | ✅ | each sys register will be updated with the input desired |
 
 ### DEFAULT SYSTEM REGISTERS
 | Name | Content | Category | Implemented? |
