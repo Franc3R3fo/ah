@@ -45,7 +45,8 @@ Other parameters (except for those required by some option ) passed count as sou
 | --------- | ----------- | ------------ |
 | `spm` | print a log of the sections content | ✅ |
 | `rpm` | print a log of the registers content | ✅ |
-| `rpm` | print a log of the proc queries | ✅ |
+| `ppl` | print a log of the proc queries | ✅ |
+| `pci` | print a log of cmdline arguments passed | ✅ |
 | `nsr` | program won't automatically add 9 system registers | ✅ |
 | `nrr` | program won't automatically add return register | ✅ |
 | `sasm` | print a log when the program starts, and when the program stops | ✅ |
